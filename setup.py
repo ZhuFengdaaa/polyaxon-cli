@@ -57,6 +57,8 @@ setup(name='polyaxon-cli',
           "polyaxon-dockerizer==0.0.9",
           "raven==6.7.0",
           "tabulate==0.8.2",
+          "Jinja2==2.10.1",
+          "six==1.12.0",
       ],
       entry_points={
           "console_scripts": [

@@ -28,7 +28,7 @@ def upload(sync=True):  # pylint:disable=assign-to-new-keyword
         with create_tarfile(files, project.name) as file_path:
             with get_files_in_current_directory('repo', [file_path]) as (files, files_size):
                 try:
-                    PolyaxonClient().project.upload_repo(project.user,
+                    PolyaxonClient().project.upload_repo(project.owner,
                                                          project.name,
                                                          files,
                                                          files_size,

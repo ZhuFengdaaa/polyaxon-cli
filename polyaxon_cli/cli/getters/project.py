@@ -30,7 +30,7 @@ def get_project_or_local(project=None):
         user, project_name = get_project_info(project)
     else:
         project = ProjectManager.get_config()
-        user, project_name = project.user, project.name
+        user, project_name = project.owner, project.name
 
     if not all([user, project_name]):
         Printer.print_error('Please provide a valid project, or init a new project.'
