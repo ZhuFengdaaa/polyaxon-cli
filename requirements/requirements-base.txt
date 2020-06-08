@@ -5,3 +5,5 @@ raven==6.7.0
 tabulate==0.8.2
 Jinja2==2.10.1
 six==1.12.0
+polystores==0.2.4
+rhea==0.5.4
